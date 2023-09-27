@@ -1,0 +1,88 @@
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+/* Começando a Main */
+.principal{
+  width: 14vw;
+  height: 30vh;
+  border: solid 1px ;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(88, 87, 87, 0.658);
+  border: solid 1px #646cff;
+}
+.botões {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+/* Estilo que veio no react e resolvi utilizar */
+button {
+  border-radius: 50%;
+  border: 1px solid transparent;
+  width: 30px;
+  height: 30px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: all ease 1s;
+}
+.botões:nth-child(1){
+  background-color: blue;
+}
+h1{
+  width:55%;
+  text-align: center;
+  background-color: rgba(245, 222, 179, 0.315);
+  font-size: 60px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #424bf8;
+  text-shadow: 1px 1px black;
+}
+/* A div que mostra se o valor é invalido */
+.alertar{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 100px;
+  background-color: rgba(19, 19, 19, 0.541);
+  height: 100px;
+  width: 300px;
+  border: solid 1px red;
+  text-shadow: 1px 1px black;
+  font-size: 20px;
+  text-align: center;
+  color: red;
+}
+.foguete{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border: solid 1px;
+  left: 800px;
+  bottom: 0;
+  animation: subir 5s infinite;
+}
+
+@keyframes subir{
+  from{
+    bottom: 0;
+  }to{
+    bottom: 800px;
+  }
+}

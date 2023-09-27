@@ -73,10 +73,28 @@ h1{
   width: 300px;
   height: 300px;
   position: absolute;
-  border: solid 1px;
+
   left: 800px;
   bottom: 0;
   animation: subir 5s infinite;
+}
+.luffye{
+  width: 179px;
+  height: 200px;
+  position: absolute;
+  
+  left: 0;
+  top: 0;
+  animation: correr 5s infinite;
+}
+.luffyd{
+  width: 179px;
+  height: 200px;
+  position: absolute;
+  transform: scaleX(-1);
+  right: 0;
+  top: 0;
+  animation: correrd 5s infinite;
 }
 
 @keyframes subir{
@@ -84,5 +102,19 @@ h1{
     bottom: 0;
   }to{
     bottom: 800px;
+  }
+}
+@keyframes correr{
+  from{
+    left: 0;
+  }to{
+    left: 85%;
+  }
+}
+@keyframes correrd{
+  from{
+    right: 0;
+  }to{
+    right: 85%;
   }
 }
